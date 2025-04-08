@@ -76,49 +76,48 @@ const Hero = () => {
   }, [nextSlide]);
 
   return (
-    <div id="inicio" className="relative h-screen w-full overflow-hidden bg-pattern pt-16">
-      {/* Image Carousel */}
-      <div className="relative h-3/4 w-full">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute top-0 left-0 h-full w-full transform transition-transform duration-500 ease-in-out ${
-              index === current 
-                ? "translate-x-0 opacity-100" 
-                : index < current 
-                  ? "-translate-x-full opacity-0" 
-                  : "translate-x-full opacity-0"
-            }`}
-          >
-            <div className="flex h-full w-full flex-col items-center justify-center px-4 lg:flex-row lg:justify-between lg:px-20">
-              <div className="mb-10 text-center lg:mb-0 lg:w-1/2 lg:text-left animate-fade-in">
-                <h1 className="mb-4 text-4xl font-bold text-taisa-gold md:text-5xl lg:text-6xl">
-                  {slide.title}
-                </h1>
-                <p className="mb-8 text-lg text-gray-700 md:text-xl">
-                  {slide.description}
-                </p>
-                <Button
-                  className="bg-taisa-gold hover:bg-taisa-light-gold text-white px-8 py-6 text-lg"
-                  onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
-                >
-                  Faça seu Pedido
-                </Button>
-              </div>
-              <div className="relative h-full max-h-[500px] w-full lg:w-1/2 flex items-center justify-center p-4">
-                <img
-                  src={slide.image}
-                  alt={slide.alt}
-                  className="object-contain max-h-full rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
+    <div id="inicio" className="relative h-screen w-full overflow-hidden pt-16">
+      {/* Background Carousel Images */}
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+            index === current ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <div 
+            className="absolute inset-0 bg-cover bg-center" 
+            style={{ 
+              backgroundImage: `url(${slide.image})`,
+              filter: "brightness(0.7)",
+            }}
+            aria-label={slide.alt}
+          />
+        </div>
+      ))}
+      
+      {/* Content overlay */}
+      <div className="relative h-full w-full z-10 flex items-center">
+        <div className="container mx-auto px-4">
+          <div className="max-w-xl bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-taisa-gold mb-4 animate-fade-in">
+              {slides[current].title}
+            </h1>
+            <p className="text-lg md:text-xl text-gray-800 mb-8">
+              {slides[current].description}
+            </p>
+            <Button
+              className="bg-taisa-gold hover:bg-taisa-light-gold text-white px-8 py-6 text-lg"
+              onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
+            >
+              Faça seu Pedido
+            </Button>
           </div>
-        ))}
+        </div>
       </div>
 
       {/* Carousel Navigation */}
-      <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-2 p-4">
+      <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-2 p-4 z-20">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -130,7 +129,7 @@ const Hero = () => {
               }
             }}
             className={`h-3 w-3 rounded-full ${
-              index === current ? "bg-taisa-gold" : "bg-gray-300"
+              index === current ? "bg-taisa-gold" : "bg-white/70"
             } transition-all duration-300`}
           />
         ))}
@@ -138,13 +137,13 @@ const Hero = () => {
 
       {/* Left/Right Arrows */}
       <button
-        className="absolute top-1/2 left-4 z-10 -translate-y-1/2 rounded-full bg-white/30 p-2 text-taisa-gold hover:bg-white/50 transition-all"
+        className="absolute top-1/2 left-4 z-20 -translate-y-1/2 rounded-full bg-white/30 p-2 text-taisa-gold hover:bg-white/50 transition-all"
         onClick={prevSlide}
       >
         <ChevronLeft size={24} />
       </button>
       <button
-        className="absolute top-1/2 right-4 z-10 -translate-y-1/2 rounded-full bg-white/30 p-2 text-taisa-gold hover:bg-white/50 transition-all"
+        className="absolute top-1/2 right-4 z-20 -translate-y-1/2 rounded-full bg-white/30 p-2 text-taisa-gold hover:bg-white/50 transition-all"
         onClick={nextSlide}
       >
         <ChevronRight size={24} />
