@@ -5,46 +5,46 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "/lovable-uploads/8fc65d61-2cdb-47e9-bcba-1c32d0951270.png",
-    alt: "Toalha Mariah com nuvens e arco-íris",
-    title: "Toalhas e Fraldas Personalizadas",
-    description: "Peças delicadas bordadas à mão com o nome da criança"
-  },
-  {
-    image: "/lovable-uploads/bd46de7b-d576-4e8b-abbd-1a41d00671fc.png",
-    alt: "Kit Nicolas com Super-heróis",
+    image: "https://rrlaserfoz.b-cdn.net/471576828_18260939413261617_89718166852552283_n.jpg",
+    alt: "Kit com bordados delicados",
     title: "Arte em Cada Detalhe",
     description: "Bordados exclusivos que encantam e emocionam"
   },
   {
-    image: "/lovable-uploads/800a6ec3-b3ac-4b79-8f26-abfe42a293e4.png",
+    image: "https://rrlaserfoz.b-cdn.net/472506212_18260939434261617_9076721055187040155_n.jpg",
     alt: "Toalha Unicórnio",
     title: "Enxoval Personalizado",
     description: "Peças únicas para momentos especiais"
   },
   {
-    image: "/lovable-uploads/d47c6100-3f22-486b-8a19-5bbe51d03c56.png",
-    alt: "Toalha Lara com nuvem e corações",
-    title: "Kits Completos",
-    description: "Todo o enxoval que seu bebê precisa"
+    image: "https://rrlaserfoz.b-cdn.net/473035239_18260939389261617_3984545922691494519_n.jpg",
+    alt: "Toalhas Stitch Alice",
+    title: "Temas Infantis",
+    description: "Diversos modelos e temas para personalizar o enxoval do seu bebê"
   },
   {
-    image: "/lovable-uploads/51b10903-fb71-4c82-8ce5-3e0166356f25.png",
+    image: "https://rrlaserfoz.b-cdn.net/472769890_18260939398261617_7030517437681889939_n.jpg",
     alt: "Toalhas de Personagens Disney",
     title: "Bordados Delicados",
     description: "Peças com acabamento refinado e detalhes exclusivos"
   },
   {
-    image: "/lovable-uploads/9b75c1cc-d8d9-47f1-b0f2-b2835d12e033.png",
-    alt: "Toalhas de Dinossauros Bernardo Correia",
+    image: "https://rrlaserfoz.b-cdn.net/472947876_18260939443261617_5982154756844040483_n.jpg",
+    alt: "Toalhas de Dinossauros",
     title: "Toalhas para Bebê",
     description: "Feitas com materiais de alta qualidade para a pele sensível do seu filho"
   },
   {
-    image: "/lovable-uploads/85c6e011-6334-4285-97ec-4d2f52d9fc1d.png",
-    alt: "Toalhas Stitch Alice",
-    title: "Temas Infantis",
-    description: "Diversos modelos e temas para personalizar o enxoval do seu bebê"
+    image: "https://rrlaserfoz.b-cdn.net/473132327_18260939416261617_7117030071976506854_n.jpg",
+    alt: "Toalha Lara com nuvem e corações",
+    title: "Kits Completos",
+    description: "Todo o enxoval que seu bebê precisa"
+  },
+  {
+    image: "https://rrlaserfoz.b-cdn.net/472851997_18260939431261617_1287256395679865698_n.jpg",
+    alt: "Toalha Mariah com nuvens e arco-íris",
+    title: "Toalhas Personalizadas",
+    description: "Peças delicadas bordadas à mão com o nome da criança"
   }
 ];
 

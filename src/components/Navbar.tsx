@@ -2,10 +2,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -41,16 +43,16 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
-          <a href="#inicio" className="font-medium text-taisa-gold hover:text-taisa-deep-pink transition-colors">
+          <a href="#inicio" className="font-medium text-taisa-gold hover:text-white transition-colors">
             Início
           </a>
-          <a href="#produtos" className="font-medium text-taisa-gold hover:text-taisa-deep-pink transition-colors">
+          <a href="#produtos" className="font-medium text-taisa-gold hover:text-white transition-colors">
             Produtos
           </a>
-          <a href="#sobre" className="font-medium text-taisa-gold hover:text-taisa-deep-pink transition-colors">
+          <a href="#sobre" className="font-medium text-taisa-gold hover:text-white transition-colors">
             Sobre Nós
           </a>
-          <a href="#contato" className="font-medium text-taisa-gold hover:text-taisa-deep-pink transition-colors">
+          <a href="#contato" className="font-medium text-taisa-gold hover:text-white transition-colors">
             Contato
           </a>
         </div>
@@ -77,28 +79,28 @@ const Navbar = () => {
           <div className="flex flex-col px-4 py-4 space-y-3">
             <a 
               href="#inicio" 
-              className="font-medium text-taisa-gold hover:text-taisa-deep-pink py-2 border-b border-gray-100"
+              className="font-medium text-taisa-gold py-2 border-b border-gray-100"
               onClick={() => setMobileMenuOpen(false)}
             >
               Início
             </a>
             <a 
               href="#produtos" 
-              className="font-medium text-taisa-gold hover:text-taisa-deep-pink py-2 border-b border-gray-100"
+              className="font-medium text-taisa-gold py-2 border-b border-gray-100"
               onClick={() => setMobileMenuOpen(false)}
             >
               Produtos
             </a>
             <a 
               href="#sobre" 
-              className="font-medium text-taisa-gold hover:text-taisa-deep-pink py-2 border-b border-gray-100"
+              className="font-medium text-taisa-gold py-2 border-b border-gray-100"
               onClick={() => setMobileMenuOpen(false)}
             >
               Sobre Nós
             </a>
             <a 
               href="#contato" 
-              className="font-medium text-taisa-gold hover:text-taisa-deep-pink py-2"
+              className="font-medium text-taisa-gold py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contato
