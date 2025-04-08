@@ -1,121 +1,66 @@
-
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
 
 const products = [
   {
-    id: 1,
-    name: "Toalha Personalizada Benjamin",
-    image: "/lovable-uploads/1740b0d6-95dd-4f56-8c0e-a8c48e04f043.png",
-    description: "Toalha bordada com nome e personagem, perfeita para o banho do seu bebê."
+    name: "Toalhas Bordadas",
+    description: "Toalhas de alta qualidade bordadas com o nome do seu bebê.",
+    imageUrl: "/lovable-uploads/22a32601-836d-455d-b3d2-fdca3cd1c5d3.png",
   },
   {
-    id: 2,
-    name: "Kit Completo Pedro",
-    image: "/lovable-uploads/9ee41607-256f-445c-991f-6d2d90fff1c0.png", 
-    description: "Kit completo com toalhas, fraldas, body e itens para o enxoval do bebê."
+    name: "Fraldas Personalizadas",
+    description: "Fraldas de pano personalizadas com bordados delicados.",
+    imageUrl: "/lovable-uploads/ee81ca66-991d-434d-aab5-b5b8183b447d.png",
   },
   {
-    id: 3,
-    name: "Kit Sofia Carolina",
-    image: "/lovable-uploads/6f17dc70-6ee2-4b63-bf22-eed752931d0d.png",
-    description: "Conjunto de toalhas bordadas em tons de rosa com coroa e nome personalizado."
+    name: "Kits de Enxoval",
+    description: "Kits completos para o enxoval do seu bebê, com tudo o que você precisa.",
+    imageUrl: "/lovable-uploads/b1fc1caf-59ba-46c5-acec-c96fc4cc16ad.png",
   },
   {
-    id: 4,
-    name: "Kit Ahmad Aviador",
-    image: "/lovable-uploads/0c0572ef-42aa-45e3-81ab-0b734439ade1.png",
-    description: "Conjunto de toalhas com bordado temático de aviador, personalizado com nome."
+    name: "Babadores Bordados",
+    description: "Babadores confortáveis e estilosos, bordados com temas infantis.",
+    imageUrl: "/lovable-uploads/bdf34feb-e95a-4708-91cd-a8b037193768.png",
   },
   {
-    id: 5,
-    name: "Kit Ahmad Urso Real",
-    image: "/lovable-uploads/a77e630e-7c49-41b7-8b21-ca7f47dce9f2.png", 
-    description: "Conjunto de toalhas em tons dourados com bordado de urso e coroa real."
+    name: "Mantas Personalizadas",
+    description: "Mantas macias e aconchegantes, personalizadas com o nome do bebê.",
+    imageUrl: "/lovable-uploads/78d453d0-953f-46f3-b590-1ebbd1c50c06.png",
   },
   {
-    id: 6,
-    name: "Kit Asaph Príncipe",
-    image: "/lovable-uploads/2f306823-d5a8-4015-80f1-b9ac7105fa1e.png",
-    description: "Conjunto completo para o príncipe com toalha de banho, babadores e fraldas."
-  }
-];
-
-const categories = [
-  "Todos",
-  "Toalhas",
-  "Fraldas",
-  "Kits Bebê",
-  "Lençóis"
+    name: "Cueiros Bordados",
+    description: "Cueiros de flanela bordados, perfeitos para envolver o seu bebê com carinho.",
+    imageUrl: "/lovable-uploads/05a59fe7-fac4-41e7-b5d2-ec65fd613cd6.png",
+  },
 ];
 
 const ProductSection = () => {
-  const [activeCategory, setActiveCategory] = useState("Todos");
-  
   return (
-    <section id="produtos" className="py-16 px-4 bg-white">
-      <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-taisa-gold mb-4">Nossos Produtos</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Peças artesanais feitas com muito amor e dedicação para proporcionar 
-            conforto e beleza. Todos os produtos são personalizáveis.
-          </p>
-          
-          {/* Categories */}
-          <div className="flex flex-wrap justify-center gap-2 mt-8">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={activeCategory === category ? "default" : "outline"}
-                className={`rounded-full ${
-                  activeCategory === category
-                    ? "bg-taisa-gold hover:bg-taisa-light-gold text-white" 
-                    : "border-taisa-gold text-taisa-gold hover:bg-taisa-gold hover:text-white"
-                }`}
-                onClick={() => setActiveCategory(category)}
+    <section id="produtos" className="container mx-auto px-4 py-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-taisa-gold mb-8">
+        Nossos Produtos
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {products.map((product, index) => (
+          <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src={product.imageUrl}
+              alt={product.name}
+              className="w-full h-64 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                {product.name}
+              </h3>
+              <p className="text-gray-600 text-sm mb-4">{product.description}</p>
+              <Button 
+                className="bg-taisa-gold hover:bg-taisa-light-gold text-white w-full mt-4"
+                onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
               >
-                {category}
+                Encomendar
               </Button>
-            ))}
+            </div>
           </div>
-        </div>
-        
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
-            <Card key={product.id} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-64 overflow-hidden">
-                <img 
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-dancing font-bold text-taisa-gold mb-2">{product.name}</h3>
-                <p className="text-gray-600 mb-4">{product.description}</p>
-                <Button 
-                  className="w-full bg-taisa-gold hover:bg-taisa-light-gold text-white"
-                  onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
-                >
-                  Encomendar <ArrowRight size={16} className="ml-2" />
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-        
-        <div className="text-center mt-12">
-          <Button 
-            className="bg-taisa-gold hover:bg-taisa-light-gold text-white px-8 py-6 text-lg"
-            onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
-          >
-            Ver Catálogo Completo
-          </Button>
-        </div>
+        ))}
       </div>
     </section>
   );

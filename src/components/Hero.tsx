@@ -5,44 +5,44 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "/lovable-uploads/22a32601-836d-455d-b3d2-fdca3cd1c5d3.png",
-    alt: "Kit completo Pedro com toalhas personalizadas",
+    image: "/lovable-uploads/8fc65d61-2cdb-47e9-bcba-1c32d0951270.png",
+    alt: "Toalha Mariah com nuvens e arco-íris",
     title: "Toalhas e Fraldas Personalizadas",
     description: "Peças delicadas bordadas à mão com o nome da criança"
   },
   {
-    image: "/lovable-uploads/ee81ca66-991d-434d-aab5-b5b8183b447d.png",
-    alt: "Kit Sofia Carolina com toalhas bordadas",
+    image: "/lovable-uploads/bd46de7b-d576-4e8b-abbd-1a41d00671fc.png",
+    alt: "Kit Nicolas com Super-heróis",
     title: "Arte em Cada Detalhe",
     description: "Bordados exclusivos que encantam e emocionam"
   },
   {
-    image: "/lovable-uploads/b1fc1caf-59ba-46c5-acec-c96fc4cc16ad.png",
-    alt: "Kit Asaph príncipe com toalhas personalizadas",
+    image: "/lovable-uploads/800a6ec3-b3ac-4b79-8f26-abfe42a293e4.png",
+    alt: "Toalha Unicórnio",
     title: "Enxoval Personalizado",
     description: "Peças únicas para momentos especiais"
   },
   {
-    image: "/lovable-uploads/bdf34feb-e95a-4708-91cd-a8b037193768.png",
-    alt: "Kit Alice Gabriely com toalhas personalizadas",
+    image: "/lovable-uploads/d47c6100-3f22-486b-8a19-5bbe51d03c56.png",
+    alt: "Toalha Lara com nuvem e corações",
     title: "Kits Completos",
     description: "Todo o enxoval que seu bebê precisa"
   },
   {
-    image: "/lovable-uploads/78d453d0-953f-46f3-b590-1ebbd1c50c06.png",
-    alt: "Kit Eva com toalhas florais personalizadas",
+    image: "/lovable-uploads/51b10903-fb71-4c82-8ce5-3e0166356f25.png",
+    alt: "Toalhas de Personagens Disney",
     title: "Bordados Delicados",
     description: "Peças com acabamento refinado e detalhes exclusivos"
   },
   {
-    image: "/lovable-uploads/05a59fe7-fac4-41e7-b5d2-ec65fd613cd6.png",
-    alt: "Kit Asaph com toalhas de banho do príncipe",
+    image: "/lovable-uploads/9b75c1cc-d8d9-47f1-b0f2-b2835d12e033.png",
+    alt: "Toalhas de Dinossauros Bernardo Correia",
     title: "Toalhas para Bebê",
     description: "Feitas com materiais de alta qualidade para a pele sensível do seu filho"
   },
   {
-    image: "/lovable-uploads/775a6538-38ff-4dc4-ada7-556faee65c45.png",
-    alt: "Kit Mariah com toalhas nuvem e sol personalizado",
+    image: "/lovable-uploads/85c6e011-6334-4285-97ec-4d2f52d9fc1d.png",
+    alt: "Toalhas Stitch Alice",
     title: "Temas Infantis",
     description: "Diversos modelos e temas para personalizar o enxoval do seu bebê"
   }
