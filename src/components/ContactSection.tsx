@@ -1,6 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Instagram, Mail, Clock, CreditCard } from "lucide-react";
+import { Phone, Instagram, Mail, Clock, CreditCard, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   const handleWhatsAppClick = () => {
