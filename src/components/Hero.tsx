@@ -99,15 +99,15 @@ const Hero = () => {
       {/* Content overlay */}
       <div className="relative h-full w-full z-10 flex items-center">
         <div className="container mx-auto px-4">
-          <div className="max-w-xl bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-taisa-gold mb-4 animate-fade-in">
+          <div className="max-w-xl bg-white/70 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-taisa-gold mb-3 animate-fade-in">
               {slides[current].title}
             </h1>
-            <p className="text-lg md:text-xl text-gray-800 mb-8">
+            <p className="text-base md:text-lg text-gray-800 mb-4">
               {slides[current].description}
             </p>
             <Button
-              className="bg-taisa-gold hover:bg-taisa-light-gold text-white px-8 py-6 text-lg"
+              className="bg-taisa-gold hover:bg-taisa-light-gold text-white px-6 py-4 text-base"
               onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
             >
               Faça seu Pedido
