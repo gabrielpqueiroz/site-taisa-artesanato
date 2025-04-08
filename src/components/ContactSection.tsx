@@ -1,7 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, MapPin, Phone, Clock, CreditCard } from "lucide-react";
+import { Phone, Instagram, Mail, Clock, CreditCard } from "lucide-react";
 
 const ContactSection = () => {
   const handleWhatsAppClick = () => {
@@ -21,7 +20,7 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="bg-white shadow-lg border-none hover:shadow-xl transition-shadow">
             <CardContent className="p-6 text-center">
-              <div className="bg-taisa-pink rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-4">
+              <div className="bg-taisa-gold/10 rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-4">
                 <Phone className="h-6 w-6 text-taisa-gold" />
               </div>
               <h3 className="font-bold text-xl text-taisa-gold mb-2">WhatsApp</h3>
@@ -37,8 +36,8 @@ const ContactSection = () => {
           
           <Card className="bg-white shadow-lg border-none hover:shadow-xl transition-shadow">
             <CardContent className="p-6 text-center">
-              <div className="bg-taisa-pink rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-4">
-                <Mail className="h-6 w-6 text-taisa-gold" />
+              <div className="bg-taisa-gold/10 rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-4">
+                <Instagram className="h-6 w-6 text-taisa-gold" />
               </div>
               <h3 className="font-bold text-xl text-taisa-gold mb-2">Instagram</h3>
               <p className="text-gray-600">Siga-nos e veja as novidades</p>
@@ -53,8 +52,8 @@ const ContactSection = () => {
           
           <Card className="bg-white shadow-lg border-none hover:shadow-xl transition-shadow">
             <CardContent className="p-6 text-center">
-              <div className="bg-taisa-pink rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-4">
-                <MapPin className="h-6 w-6 text-taisa-gold" />
+              <div className="bg-taisa-gold/10 rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-4">
+                <Mail className="h-6 w-6 text-taisa-gold" />
               </div>
               <h3 className="font-bold text-xl text-taisa-gold mb-2">Localização</h3>
               <p className="text-gray-600">Foz do Iguaçu - Paraná</p>
