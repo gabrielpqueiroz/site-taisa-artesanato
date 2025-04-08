@@ -5,28 +5,46 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "/lovable-uploads/a8a4d00d-a75b-44b2-8ac2-ea3601bef350.png",
-    alt: "Conjunto de toalhas personalizadas para bebê",
+    image: "/lovable-uploads/22a32601-836d-455d-b3d2-fdca3cd1c5d3.png",
+    alt: "Kit completo Pedro com toalhas personalizadas",
     title: "Toalhas e Fraldas Personalizadas",
     description: "Peças delicadas bordadas à mão com o nome da criança"
   },
   {
-    image: "/lovable-uploads/51f957ff-a0b7-4f06-bb45-946c1f526dcc.png",
-    alt: "Toalhas bordadas com nome Eva",
+    image: "/lovable-uploads/ee81ca66-991d-434d-aab5-b5b8183b447d.png",
+    alt: "Kit Sofia Carolina com toalhas bordadas",
     title: "Arte em Cada Detalhe",
     description: "Bordados exclusivos que encantam e emocionam"
   },
   {
-    image: "/lovable-uploads/1740b0d6-95dd-4f56-8c0e-a8c48e04f043.png",
-    alt: "Toalha personalizada Benjamin",
+    image: "/lovable-uploads/b1fc1caf-59ba-46c5-acec-c96fc4cc16ad.png",
+    alt: "Kit Asaph príncipe com toalhas personalizadas",
     title: "Enxoval Personalizado",
     description: "Peças únicas para momentos especiais"
   },
   {
-    image: "/lovable-uploads/9ee41607-256f-445c-991f-6d2d90fff1c0.png",
-    alt: "Kit completo Pedro",
+    image: "/lovable-uploads/bdf34feb-e95a-4708-91cd-a8b037193768.png",
+    alt: "Kit Alice Gabriely com toalhas personalizadas",
     title: "Kits Completos",
     description: "Todo o enxoval que seu bebê precisa"
+  },
+  {
+    image: "/lovable-uploads/78d453d0-953f-46f3-b590-1ebbd1c50c06.png",
+    alt: "Kit Eva com toalhas florais personalizadas",
+    title: "Bordados Delicados",
+    description: "Peças com acabamento refinado e detalhes exclusivos"
+  },
+  {
+    image: "/lovable-uploads/05a59fe7-fac4-41e7-b5d2-ec65fd613cd6.png",
+    alt: "Kit Asaph com toalhas de banho do príncipe",
+    title: "Toalhas para Bebê",
+    description: "Feitas com materiais de alta qualidade para a pele sensível do seu filho"
+  },
+  {
+    image: "/lovable-uploads/775a6538-38ff-4dc4-ada7-556faee65c45.png",
+    alt: "Kit Mariah com toalhas nuvem e sol personalizado",
+    title: "Temas Infantis",
+    description: "Diversos modelos e temas para personalizar o enxoval do seu bebê"
   }
 ];
 

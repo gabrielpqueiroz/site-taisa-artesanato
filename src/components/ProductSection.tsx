@@ -98,7 +98,7 @@ const ProductSection = () => {
                 <h3 className="text-2xl font-dancing font-bold text-taisa-gold mb-2">{product.name}</h3>
                 <p className="text-gray-600 mb-4">{product.description}</p>
                 <Button 
-                  className="w-full bg-taisa-pink hover:bg-taisa-deep-pink text-white"
+                  className="w-full bg-taisa-gold hover:bg-taisa-light-gold text-white"
                   onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
                 >
                   Encomendar <ArrowRight size={16} className="ml-2" />
