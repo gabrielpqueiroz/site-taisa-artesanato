@@ -7,15 +7,39 @@ import { ArrowRight } from "lucide-react";
 const products = [
   {
     id: 1,
-    name: "Kit Toalhas Personalizadas",
-    image: "/lovable-uploads/a8a4d00d-a75b-44b2-8ac2-ea3601bef350.png",
-    description: "Conjunto de toalhas delicadamente bordadas com o nome da criança."
+    name: "Toalha Personalizada Benjamin",
+    image: "/lovable-uploads/1740b0d6-95dd-4f56-8c0e-a8c48e04f043.png",
+    description: "Toalha bordada com nome e personagem, perfeita para o banho do seu bebê."
   },
   {
     id: 2,
-    name: "Toalhas Floral com Nome",
-    image: "/lovable-uploads/51f957ff-a0b7-4f06-bb45-946c1f526dcc.png", 
-    description: "Toalhas com bordado floral e nome personalizado."
+    name: "Kit Completo Pedro",
+    image: "/lovable-uploads/9ee41607-256f-445c-991f-6d2d90fff1c0.png", 
+    description: "Kit completo com toalhas, fraldas, body e itens para o enxoval do bebê."
+  },
+  {
+    id: 3,
+    name: "Kit Sofia Carolina",
+    image: "/lovable-uploads/6f17dc70-6ee2-4b63-bf22-eed752931d0d.png",
+    description: "Conjunto de toalhas bordadas em tons de rosa com coroa e nome personalizado."
+  },
+  {
+    id: 4,
+    name: "Kit Ahmad Aviador",
+    image: "/lovable-uploads/0c0572ef-42aa-45e3-81ab-0b734439ade1.png",
+    description: "Conjunto de toalhas com bordado temático de aviador, personalizado com nome."
+  },
+  {
+    id: 5,
+    name: "Kit Ahmad Urso Real",
+    image: "/lovable-uploads/a77e630e-7c49-41b7-8b21-ca7f47dce9f2.png", 
+    description: "Conjunto de toalhas em tons dourados com bordado de urso e coroa real."
+  },
+  {
+    id: 6,
+    name: "Kit Asaph Príncipe",
+    image: "/lovable-uploads/2f306823-d5a8-4015-80f1-b9ac7105fa1e.png",
+    description: "Conjunto completo para o príncipe com toalha de banho, babadores e fraldas."
   }
 ];
 
@@ -75,34 +99,9 @@ const ProductSection = () => {
                 <p className="text-gray-600 mb-4">{product.description}</p>
                 <Button 
                   className="w-full bg-taisa-pink hover:bg-taisa-deep-pink text-white"
-                  onClick={() => window.open("https://api.whatsapp.com/send?phone=55SEUNUMEROAQUI&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20" + product.name, "_blank")}
+                  onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
                 >
                   Encomendar <ArrowRight size={16} className="ml-2" />
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-
-          {/* Placeholder cards for future products */}
-          {Array.from({ length: 4 }).map((_, index) => (
-            <Card key={`placeholder-${index}`} className="overflow-hidden border-none shadow-lg">
-              <div className="h-64 bg-gray-100 flex items-center justify-center">
-                <img
-                  src="/lovable-uploads/1d1757de-957a-4d08-82e8-61749a2f6f6b.png"
-                  alt="Taisa Artesanatos Logo"
-                  className="w-1/2 opacity-30"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-dancing font-bold text-taisa-gold mb-2">Personalização Exclusiva</h3>
-                <p className="text-gray-600 mb-4">
-                  Criamos produtos sob medida com o nome e as cores que você desejar.
-                </p>
-                <Button 
-                  className="w-full bg-taisa-pink hover:bg-taisa-deep-pink text-white"
-                  onClick={() => window.open("https://api.whatsapp.com/send?phone=55SEUNUMEROAQUI&text=Olá,%20gostaria%20de%20fazer%20uma%20encomenda%20personalizada", "_blank")}
-                >
-                  Consultar <ArrowRight size={16} className="ml-2" />
                 </Button>
               </CardContent>
             </Card>
@@ -112,7 +111,7 @@ const ProductSection = () => {
         <div className="text-center mt-12">
           <Button 
             className="bg-taisa-gold hover:bg-taisa-light-gold text-white px-8 py-6 text-lg"
-            onClick={() => window.open("https://api.whatsapp.com/send?phone=55SEUNUMEROAQUI&text=Olá,%20gostaria%20de%20conhecer%20todos%20os%20produtos%20disponíveis", "_blank")}
+            onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
           >
             Ver Catálogo Completo
           </Button>

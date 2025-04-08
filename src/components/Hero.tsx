@@ -15,6 +15,18 @@ const slides = [
     alt: "Toalhas bordadas com nome Eva",
     title: "Arte em Cada Detalhe",
     description: "Bordados exclusivos que encantam e emocionam"
+  },
+  {
+    image: "/lovable-uploads/1740b0d6-95dd-4f56-8c0e-a8c48e04f043.png",
+    alt: "Toalha personalizada Benjamin",
+    title: "Enxoval Personalizado",
+    description: "Peças únicas para momentos especiais"
+  },
+  {
+    image: "/lovable-uploads/9ee41607-256f-445c-991f-6d2d90fff1c0.png",
+    alt: "Kit completo Pedro",
+    title: "Kits Completos",
+    description: "Todo o enxoval que seu bebê precisa"
   }
 ];
 
@@ -70,7 +82,7 @@ const Hero = () => {
                 </p>
                 <Button
                   className="bg-taisa-gold hover:bg-taisa-light-gold text-white px-8 py-6 text-lg"
-                  onClick={() => window.open("https://api.whatsapp.com/send?phone=55SEUNUMEROAQUI&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20Taisa%20Artesanatos!", "_blank")}
+                  onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
                 >
                   Faça seu Pedido
                 </Button>

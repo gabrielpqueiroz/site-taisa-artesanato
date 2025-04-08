@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center px-4 md:px-6">
         <a href="/" className="flex items-center">
           <img 
-            src="/lovable-uploads/1d1757de-957a-4d08-82e8-61749a2f6f6b.png" 
+            src="/lovable-uploads/d0018f5e-c181-4e38-9761-fcea29458b46.png" 
             alt="Taisa Artesanatos" 
             className="h-16 w-auto"
           />
@@ -57,7 +57,7 @@ const Navbar = () => {
         
         <Button 
           className="hidden md:inline-flex bg-taisa-gold hover:bg-taisa-light-gold text-white"
-          onClick={() => window.open("https://api.whatsapp.com/send?phone=55SEUNUMEROAQUI&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20Taisa%20Artesanatos!", "_blank")}
+          onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
         >
           Fale Conosco
         </Button>
@@ -105,7 +105,7 @@ const Navbar = () => {
             </a>
             <Button 
               className="bg-taisa-gold hover:bg-taisa-light-gold text-white mt-2"
-              onClick={() => window.open("https://api.whatsapp.com/send?phone=55SEUNUMEROAQUI&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20Taisa%20Artesanatos!", "_blank")}
+              onClick={() => window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank")}
             >
               Fale Conosco
             </Button>

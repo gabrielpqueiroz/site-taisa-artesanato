@@ -1,11 +1,11 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, MapPin, Phone, Clock } from "lucide-react";
+import { Mail, MapPin, Phone, Clock, CreditCard } from "lucide-react";
 
 const ContactSection = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://api.whatsapp.com/send?phone=55SEUNUMEROAQUI&text=Olá,%20vim%20através%20do%20seu%20site.%20Gostaria%20de%20mais%20informações!", "_blank");
+    window.open("https://api.whatsapp.com/message/AITKRRQCRE7YO1?autoload=1&app_absent=0", "_blank");
   };
 
   return (
@@ -24,13 +24,13 @@ const ContactSection = () => {
               <div className="bg-taisa-pink rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-4">
                 <Phone className="h-6 w-6 text-taisa-gold" />
               </div>
-              <h3 className="font-bold text-xl text-taisa-gold mb-2">Telefone</h3>
-              <p className="text-gray-600">Entre em contato por telefone ou WhatsApp</p>
+              <h3 className="font-bold text-xl text-taisa-gold mb-2">WhatsApp</h3>
+              <p className="text-gray-600">Atendimento rápido e personalizado</p>
               <Button 
                 className="mt-4 bg-taisa-gold hover:bg-taisa-light-gold text-white"
                 onClick={handleWhatsAppClick}
               >
-                WhatsApp
+                Enviar Mensagem
               </Button>
             </CardContent>
           </Card>
@@ -40,13 +40,13 @@ const ContactSection = () => {
               <div className="bg-taisa-pink rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-4">
                 <Mail className="h-6 w-6 text-taisa-gold" />
               </div>
-              <h3 className="font-bold text-xl text-taisa-gold mb-2">Email</h3>
-              <p className="text-gray-600">Envie suas dúvidas ou pedidos por email</p>
+              <h3 className="font-bold text-xl text-taisa-gold mb-2">Instagram</h3>
+              <p className="text-gray-600">Siga-nos e veja as novidades</p>
               <Button 
                 className="mt-4 bg-taisa-gold hover:bg-taisa-light-gold text-white"
-                onClick={() => window.location.href = "mailto:contato@taisaartesanatos.com"}
+                onClick={() => window.location.href = "https://www.instagram.com/taisa.artesanatos/"}
               >
-                Enviar Email
+                Ver Perfil
               </Button>
             </CardContent>
           </Card>
@@ -56,8 +56,8 @@ const ContactSection = () => {
               <div className="bg-taisa-pink rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-4">
                 <MapPin className="h-6 w-6 text-taisa-gold" />
               </div>
-              <h3 className="font-bold text-xl text-taisa-gold mb-2">Endereço</h3>
-              <p className="text-gray-600">Atendemos em todas as regiões com entrega</p>
+              <h3 className="font-bold text-xl text-taisa-gold mb-2">Localização</h3>
+              <p className="text-gray-600">Foz do Iguaçu - Paraná</p>
               <Button 
                 className="mt-4 bg-taisa-gold hover:bg-taisa-light-gold text-white"
                 onClick={handleWhatsAppClick}
@@ -72,26 +72,33 @@ const ContactSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-dancing font-bold text-taisa-gold mb-4">
-                Horário de Atendimento
+                Informações Adicionais
               </h3>
               <div className="flex items-start mb-4">
                 <Clock className="h-5 w-5 text-taisa-gold mr-3 mt-1" />
                 <div>
-                  <p className="font-bold text-gray-800">Segunda a Sexta</p>
-                  <p className="text-gray-600">09:00 - 18:00</p>
+                  <p className="font-bold text-gray-800">Desde 2010</p>
+                  <p className="text-gray-600">Tradição e qualidade em artesanato</p>
+                </div>
+              </div>
+              <div className="flex items-start mb-4">
+                <MapPin className="h-5 w-5 text-taisa-gold mr-3 mt-1" />
+                <div>
+                  <p className="font-bold text-gray-800">Envio para Todo Brasil</p>
+                  <p className="text-gray-600">Entregamos em qualquer região</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <Clock className="h-5 w-5 text-taisa-gold mr-3 mt-1" />
+                <CreditCard className="h-5 w-5 text-taisa-gold mr-3 mt-1" />
                 <div>
-                  <p className="font-bold text-gray-800">Sábados</p>
-                  <p className="text-gray-600">09:00 - 13:00</p>
+                  <p className="font-bold text-gray-800">Formas de Pagamento</p>
+                  <p className="text-gray-600">Aceitamos cartões de crédito e débito</p>
                 </div>
               </div>
               
               <div className="mt-8">
                 <p className="text-gray-700 mb-4">
-                  Fazemos produtos personalizados de acordo com suas preferências. 
+                  Enxoval bordado personalizado para seu bebê, cama, mesa e banho.
                   Entre em contato para sabermos suas necessidades!
                 </p>
                 <Button 
