@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Instagram, Mail, Clock, CreditCard, MapPin } from "lucide-react";
@@ -54,7 +53,7 @@ const ContactSection = () => {
           <Card className="bg-white shadow-lg border-none hover:shadow-xl transition-shadow">
             <CardContent className="p-6 text-center">
               <div className="bg-taisa-gold/10 rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-4">
-                <Mail className="h-6 w-6 text-taisa-gold" />
+                <MapPin className="h-6 w-6 text-taisa-gold" />
               </div>
               <h3 className="font-bold text-xl text-taisa-gold mb-2">Localização</h3>
               <p className="text-gray-600">Foz do Iguaçu - Paraná</p>

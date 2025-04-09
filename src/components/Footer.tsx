@@ -1,4 +1,3 @@
-
 import { Heart, Instagram, Facebook, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -84,6 +83,7 @@ const Footer = () => {
           <p className="text-gray-500 text-sm flex items-center justify-center">
             &copy; {currentYear} Taisa Artesanatos. Desde 2010. Todos os direitos reservados.
             <Heart size={14} className="text-taisa-deep-pink mx-1" />
+            Desenvolvido por Gabriel Queiroz
           </p>
         </div>
       </div>
