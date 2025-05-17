@@ -15,7 +15,7 @@ const AboutSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1">
-            <h3 className="text-3xl font-dancing font-bold text-taisa-gold mb-4">
+            <h3 className="text-3xl font-cormorant font-bold text-taisa-gold mb-4">
               Nossa História
             </h3>
             <p className="text-gray-700 mb-4">

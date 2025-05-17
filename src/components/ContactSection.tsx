@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Instagram, Mail, Clock, CreditCard, MapPin } from "lucide-react";
@@ -70,7 +71,7 @@ const ContactSection = () => {
         <div className="mt-16 bg-gray-50 rounded-lg p-6 md:p-10 shadow-inner">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-dancing font-bold text-taisa-gold mb-4">
+              <h3 className="text-3xl font-cormorant font-bold text-taisa-gold mb-4">
                 Informações Adicionais
               </h3>
               <div className="flex items-start mb-4">
