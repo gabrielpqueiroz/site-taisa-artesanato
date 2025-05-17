@@ -100,7 +100,7 @@ const Hero = () => {
       <div className="relative h-full w-full z-10 flex items-center">
         <div className="container mx-auto px-4">
           <div className="max-w-xl bg-white/70 backdrop-blur-sm p-6 rounded-lg shadow-lg">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-taisa-gold mb-3 animate-fade-in text-shadow-hero">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-taisa-gold mb-3 animate-fade-in">
               {slides[current].title}
             </h1>
             <p className="text-base md:text-lg text-gray-800 mb-4">

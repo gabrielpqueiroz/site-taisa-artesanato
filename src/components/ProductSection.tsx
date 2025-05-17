@@ -49,7 +49,7 @@ const ProductSection = () => {
               className="w-full h-64 object-cover"
             />
             <div className="p-4">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold text-taisa-gold mb-2">
                 {product.name}
               </h3>
               <p className="text-gray-600 text-sm mb-4">{product.description}</p>
