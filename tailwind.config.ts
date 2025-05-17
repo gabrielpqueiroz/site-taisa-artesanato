@@ -109,6 +109,8 @@ export default {
 			fontFamily: {
 				dancing: ['Dancing Script', 'cursive'],
 				montserrat: ['Montserrat', 'sans-serif'],
+				playfair: ['Playfair Display', 'serif'],
+				cormorant: ['Cormorant Garamond', 'serif'],
 			},
 		},
 	},

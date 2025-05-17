@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -79,7 +79,7 @@
   }
   
   h1, h2, h3 {
-    @apply font-dancing;
+    @apply font-cormorant;
   }
 }
 
